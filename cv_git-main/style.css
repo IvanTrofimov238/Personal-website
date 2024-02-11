@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: dimgray;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  white-space: nowrap;
+}
+
+.header {
+  height: 110px;
+  background: #FFFFFF;
+}
+
+.menu {
+  height: 100%;
+  margin: auto 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__logo {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.menu__ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 46px;
+  text-transform: uppercase;
+}
+
+.menu__li {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.home {
+  height: 622px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://img.freepik.com/free-photo/high-angle-desk-assortment-with-laptop_23-2149013922.jpg?w=740&t=st=1707658631~exp=1707659231~hmac=c13fed7a1fce35c15589935406fda82a655bceb5f3f6237f650f854c4b3eba01");
+  background-size: cover;
+  background-position: bottom 25% center;
+}
+
+.home__text {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 89px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.home__line {
+  margin-top: 7px;
+  width: 80px;
+  height: 10px;
+  background: #817070;
+}
+
+.story {
+  height: 632px;
+  padding: 60px 5%;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story__content {
+  padding-top: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.story__image {
+  width: 46%;
+  max-width: 600px;
+  height: 400px;
+  background-image: url("https://sun9-52.userapi.com/impf/c850124/v850124384/f21be/_RDk_Br70sI.jpg?size=1280x1280&quality=96&sign=f620320bbcb0d0de1592d0d2ff5ba759&type=album");
+  background-size: cover;
+  background-position: center;
+}
+
+.story__text {
+  padding-left: 4%;
+  width: 46%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.blog {
+  height: 711px;
+  background: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.blog__header {
+  margin: 60px 0;
+}
+
+.blog__content {
+  margin-bottom: 64px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog__card {
+  width: 365px;
+  height: 474px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.card__header {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.card__image {
+  margin: 24px 20px;
+  width: 325px;
+  height: 216px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card__image.img-1 {
+  background-image: url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+}
+
+.card__image.img-2 {
+  background-image: url("https://images.unsplash.com/photo-1455470956270-4cbb357f7052?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+}
+
+.card__image.img-3 {
+  background-image: url("https://images.unsplash.com/photo-1461988091159-192b6df7054f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80");
+}
+
+.card__text {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.contact {
+  height: 337px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #817070;
+  border: 1px solid black;
+}
+
+.contact-header {
+  color: #FFFFFF;
+}
+
+.contact-input {
+  width: 300px;
+  height: 55px;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #817070;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+}
+
+.contact-input::placeholder {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: #EFEFEF;
+  box-shadow: 0 0 5px #EFEFEF;
+}
+
+.contact-button {
+  width: 129px;
+  height: 55px;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #817070;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.contact-button:active {
+  background-color: #817070;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.footer {
+  height: 72px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.links {
+  width: 320px;
+  margin: 0 auto 40px; /* Добавляем auto для центрирования по горизонтали */
+}
+
+.links__header {
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+  text-align: center; /* Центрируем текст заголовка */
+}
+
+.links__container {
+  background-color: #fff;
+  list-style-type: none;
+  border: 1px solid hsla(210, 18%, 87%, 1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем элементы по горизонтали */
+  padding: 20px;
+  gap: 10px;
+}
+
+.links__link,
+.links__title {
+  font-size: 14px;
+  color: #57606a;
+}
+
+.links__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%; /* Ширина 100%, чтобы растягиваться по контейнеру */
+  justify-content: center; /* Центрируем контент по горизонтали */
+  border-bottom: 1px solid hsla(210, 18%, 87%, 1);
+}
+
+.links__link:last-child {
+  border-bottom: none;
+}
+
+.links__link,
+.links__link:visited {
+  text-decoration: none;
+  color: #a3a4a5;
+}
+
+.links__title {
+  margin: 0;
+  min-width: 100px;
+}
