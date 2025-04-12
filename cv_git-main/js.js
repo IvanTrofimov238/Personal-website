@@ -1,7 +1,6 @@
-/* Это объявление переменной, мы наши кнопку по тегу */
-const button = document.querySelector('button');
+const themeButton = document.querySelector('.theme-toggle');
 
-/* Тут на кнопку навешиваем обрабочик, который ждёт клика и тогда запустит логику */
-button.addEventListener('click', function () {
-	alert('Делай, что можешь, с тем, что имеешь, там, где ты есть.')
-})
+themeButton.addEventListener('click', function () {
+  document.body.classList.toggle('dark-theme');
+  alert('Делай, что можешь, с тем, что имеешь, там, где ты есть.');
+});
