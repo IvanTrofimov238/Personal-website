@@ -1,7 +1,20 @@
-/* Это объявление переменной, мы наши кнопку по тегу */
-const button = document.querySelector('button');
+const themeToggle = document.querySelector('.theme-toggle');
 
-/* Тут на кнопку навешиваем обрабочик, который ждёт клика и тогда запустит логику */
-button.addEventListener('click', function () {
-	alert('Делай, что можешь, с тем, что имеешь, там, где ты есть.')
-})
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('light-theme');
+});
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("topBtn").style.display = "block";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
